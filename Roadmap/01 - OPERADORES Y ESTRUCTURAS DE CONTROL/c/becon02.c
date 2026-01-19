@@ -31,7 +31,7 @@ void operators()
     int c = 3;
 
     // Arithmetic Operators
-    printf("--- Arithmetic Operators ---\n");
+    printf("--- Arithmetic Operators ---\n\n");
     {
         printf("Addition: %d + %d = %d\n", a, b, a + b);
         printf("Subtraction: %d - %d = %d\n", a, b, a - b);
@@ -56,7 +56,7 @@ void operators()
         printf("Greater than: (%d > %d) = %d\n", a, b, a > b);
         printf("Smaller than: (%d < %d) = %d\n", a, b, a < b);
         printf("Greater than || Equal to: (%d >= %d) = %d\n", a, b, a >= b);
-        printf("Smaller than || Equal to: (%d <= %d) = %d\n", a, b, a <= b);
+        printf("Smaller than || Equal to: (%d <= %d) = %d\n\n", a, b, a <= b);
     }
 
     //Logic Opetators
@@ -70,12 +70,58 @@ void operators()
         printf("OR -> Is one True?:(%d == %d || %d <= %d) = %d\n", a, c, c, b, (a == c || c <= b));
     
         //NOT (!) -> Reverses the result
-        printf("NOT -> Reverse the result (6 == 3) = 0; !(%d == %d) = %d", a, c, !(a == c));
+        printf("NOT -> Reverse the result (6 == 3) = 0; !(%d == %d) = %d\n\n", a, c, !(a == c));
+    }
+
+    //Assignment Operators
+    printf("--- Assignment Operators --- \n\n");
+    {
+            printf("'=' : c = 3\n");
+            printf("'+=' : (c += 1 -> c = c + 1\n");
+            printf("'-=' : (c -= 1 -> c = c - 1\n");
+            printf("'*=' : (c *= 2 -> c = c * 2\n");
+            printf("'/=' : (c /= 2 -> c = c / 2\n");
+            printf("'%%=' : (c %%= 2 -> c = c %% 2\n\n");
+    }
+
+    //Bits Operators
+    printf("--- Bits Operators ---\n");
+    printf("a = %d, x = 3\n\n", a);
+    {
+        int x = 3; // Variable local
+        
+
+        // Operaciones de bits con AND, OR, XOR, etc..
+        printf("AND: (a & x) = %d\n", a & x);
+        printf("OR: (a | x) = %d\n", a | x);
+        printf("XOR: (a ^ x) = %d\n", a ^ x);
+        printf("(~a) = %d\n", ~a);
+        printf("LEFT: (x << 1) = %d\n", x << 1);
+        printf("RIGHT: (x >> 1) = %d\n\n", x >> 1);
     }
 }
 
+/* Conditionals
+This function showcases the most common conditionals statements:
+- if: To specify a block of code to be executed, if a specified condition is True
+- else if:  To specify a new condition to test, if the first condition is False
+- else:  To specify a block of code to be executed, if the same condition is False
+- switch: To specify many alternative blocks of code to be executed
+*/
 void conditionals()
 {
+    int age = 20;
+
+    printf("--- Contional (if, else) ---\n\n");
+    {
+        if(age >= 18){ printf("You have %d, you are an adult\n\n", age); }
+        else{ printf("You have %d, you are not an adult\n\n", age); }
+    }
+
+    printf("--- Conditional (if, else if)\n\n");
+    {
+        
+    }
 
 }
 
